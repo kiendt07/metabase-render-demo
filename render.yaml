@@ -3,7 +3,7 @@ services:
     name: metabase
     env: docker
     repo: https://github.com/kiendt07/metabase-render-demo.git # optional
-    plan: free # ensure that metabase has at least 2GB of RAM (defaults to starter)
+    plan: starter # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
     envVars:
       - key: MB_DB_CONNECTION_URI
