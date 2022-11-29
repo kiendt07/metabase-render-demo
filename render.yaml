@@ -5,14 +5,3 @@ services:
     repo: https://github.com/kiendt07/metabase-render-demo.git # optional
     plan: starter # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
-    envVars:
-      - key: MB_DB_CONNECTION_URI
-        fromDatabase:
-          name: elephant
-          property: connectionString
-databases:
-  - name: elephant
-    databaseName: metabasedb
-    ipAllowList: [] # only allow internal connections
-    plan: free
-
